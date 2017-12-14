@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<p id="display"></p>
+		<form>
+			First name: <input type="text" id="fname"><br>
+			Last name: <input type="text" id="lname"><br>
+			<input type="button" value="Submit" onclick="getFormvalue()">
+		</form>
+		<script type="text/javascript">
+			function getFormvalue(){
+				
+				var first = document.getElementById("fname").value
+				var second = document.getElementById("lname").value
+
+				document.getElementById("display").innerHTML= first + second
+			}
+			
+			   
+		</script>
+	</body>
+</html>

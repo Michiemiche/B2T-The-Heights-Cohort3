@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<table id="myTable" border="1">
+			<tr>
+				<td>Clifford</td>
+				<td>Harris</td>
+			</tr>
+			
+		</table><br>
+
+		Column 1: <input type="text" id="col1"><br>
+		Column 2: <input type="text" id="col2"><br>
+	
+		<input type="button" onclick="insertRow()" value="Insert row">
+
+		<script type="text/javascript">
+			function insertRow() {
+				
+				var column1 = document.getElementById('col1').value
+				var column2 = document.getElementById('col2').value
+				document.getElementById('myTable').innerHTML += '<tr><td>'+column1  +'</td> <td>'+column2  +'</td></tr>'
+			}
+		</script>
+	</body>
+</html>
