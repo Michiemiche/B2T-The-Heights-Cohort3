@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var index = 0
+			while(index<= 100){
+			//The logical operator && is required as both conditions must be true
+			if (index%3==0 && 5%index==0){
+					console.log('FizzBuzz');
+			//The compare module operator % gives the remainder of a number
+			}else if(index%3==0){
+					console.log('Fizz');
+
+			}else if(index%5==0){
+					console.log('Buzz');
+			}else
+					console.log(index);
+					index++;
+		}
+		</script>
+	</body>
+</html>
